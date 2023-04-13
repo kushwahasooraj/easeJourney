@@ -1,15 +1,11 @@
 import react, { useEffect, useState } from 'react'
-import { FiSun, FiMoon, FiFacebook, FiInstagram, FiYoutube, FiTwitter, FiArrowRightCircle, FiPlay } from "react-icons/fi"
+import { FiSun, FiMoon, FiFacebook, FiInstagram, FiYoutube, FiTwitter, FiArrowRightCircle, FiPlay, FiPhoneCall } from "react-icons/fi"
 import "./Css/styles.css"
 import video from "./assets/video/video.mp4"
 import imgp from "./assets/img/home1.jpg"
 import home1 from "./assets/img/home1.jpg"
 import about1 from "./assets/img/about1.jpg"
 import about2 from "./assets/img/about2.jpg"
-import discover1 from "./assets/img/discover1.jpg"
-import discover2 from "./assets/img/discover2.jpg"
-import discover3 from "./assets/img/discover3.jpg"
-import discover4 from "./assets/img/discover4.jpg"
 import experience1 from "./assets/img/experience1.jpg"
 import experience2 from "./assets/img/experience2.jpg"
 import place1 from "./assets/img/place1.jpg"
@@ -17,11 +13,6 @@ import place2 from "./assets/img/place2.jpg"
 import place3 from "./assets/img/place3.jpg"
 import place4 from "./assets/img/place4.jpg"
 import place5 from "./assets/img/place5.jpg"
-import sponsors1 from "./assets/img/sponsors1.png"
-import sponsors2 from "./assets/img/sponsors2.png"
-import sponsors3 from "./assets/img/sponsors3.png"
-import sponsors4 from "./assets/img/sponsors4.png"
-import sponsors5 from "./assets/img/sponsors5.png"
 import "./Css/swiper.css"
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -48,51 +39,8 @@ useEffect(()=>{
         {/* <!-- ----------------------------  Navigation ---------------------------------------------- --> */}
 
     <header className="header scroll-header" id="header" >
-            <nav className="nav container">
-                <a href="/" className="nav__logo">Ease Journey</a>
-
-                <div className="nav__menu" id="nav-menu">
-                    <ul className="nav__list">
-                        <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">Home</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#" className="nav__link">Nearby</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#" className="nav__link">Transportation</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#" className="nav__link">Representatives</a>
-                        </li>
-                        <li></li>
-                        <li className="nav__item">
-                            <a href="#" className="nav__link">About</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#" className="nav__link">Contact Us</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#discover" className="nav__link">Discover</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#place" className="nav__link"><p style={{color: "red"}}>Emergency</p></a>
-                        </li>
-                    </ul>
-
-                    <div className="nav__dark">
-                        {/* <!-- Theme change button --> */}
-                        <span className="change-theme-name">Dark mode</span>
-                        <i className="ri-moon-line change-theme" onClick={() => toggledark()} id="theme-button">{name}</i>
-                    </div>
-
-                    <i className="ri-close-line nav__close" id="nav-close"></i>
-                </div>
-
-                <div className="nav__toggle" id="nav-toggle">
-                    <i className="ri-function-line"></i>
-                </div>
-            </nav>
+        <Navbar/>
+            
         </header>
 
         <main className="main">
@@ -103,7 +51,7 @@ useEffect(()=>{
                 <div className="home__container container grid">
                     <div className="home__data">
                         <span className="home__data-subtitle">Discover your place</span>
-                        <h1 className="home__data-title">Explore The <br/> Best <b>Beautiful <br/> Beaches</b></h1>
+                        <h1 className="home__data-title">Explore The <br/> Best <b>Beautiful <br/> Places</b></h1>
                         <a href="#/" className="button">Explore</a>
 
                     </div>
@@ -139,7 +87,7 @@ useEffect(()=>{
             <section className="about section" id="about">
                 <div className="about__container container grid">
                     <div className="about__data">
-                        <h2 className="section__title about__title">More Information <br/> About The Best Beaches</h2>
+                        <h2 className="section__title about__title">More Information <br/> About The Best Hotels</h2>
                         <p className="about__description">You can find the most beautiful and pleasant places at the best 
                             prices with special discounts, you choose the place we will guide you all the way to wait, get your 
                             place now.
@@ -159,8 +107,117 @@ useEffect(()=>{
                 </div>
             </section>
             
-           
-            <section className="discover section" id="discover">
+            <section className="place section" id="place">
+            <h2 className="section__title">Discover the most <br/> attractive places</h2>
+
+                <div className="place__container container grid">
+                   
+                    <div className="place__card">
+                        <img src={place1} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4,8</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Bali</h3>
+                                <span className="place__subtitle">Indonesia</span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                        </button>
+                    </div>
+
+                   
+                    <div className="place__card">
+                        <img src={place2} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">5,0</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Bora Bora</h3>
+                                <span className="place__subtitle">Polinesia</span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                        </button>
+                    </div>
+
+                   
+                    <div className="place__card">
+                        <img src={place3} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4,9</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Hawaii</h3>
+                                <span className="place__subtitle">EE.UU</span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line">  <FiArrowRightCircle size={15}/></i>
+                        </button>
+                    </div>
+
+                   
+                    <div className="place__card">
+                        <img src={place4} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4,8</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Whitehaven</h3>
+                                <span className="place__subtitle">Australia</span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                        </button>
+                    </div>
+
+                   
+                    <div className="place__card">
+                        <img src={place5} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4,8</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Hvar</h3>
+                                <span className="place__subtitle">Croacia</span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            {/* <section className="discover section" id="discover">
                 <h2 className="section__title">Discover the most <br/> attractive places</h2>
                 
                 <div className="discover__container container swiper-container">
@@ -180,7 +237,7 @@ useEffect(()=>{
                        
                     </div>
                 </div>
-            </section>
+            </section> */}
 
            
             <section className="experience section">
@@ -188,20 +245,7 @@ useEffect(()=>{
 
                 <div className="experience__container container grid">
                     <div className="experience__content grid">
-                        <div className="experience__data">
-                            <h2 className="experience__number">20</h2>
-                            <span className="experience__description">Year <br/> Experience</span>
-                        </div>
-
-                        <div className="experience__data">
-                            <h2 className="experience__number">75</h2>
-                            <span className="experience__description">Complete <br/> tours</span>
-                        </div>
-
-                        <div className="experience__data">
-                            <h2 className="experience__number">650+</h2>
-                            <span className="experience__description">Tourist <br/> Destination</span>
-                        </div>
+                       
                     </div>
 
                     <div className="experience__img grid">
@@ -248,18 +292,16 @@ useEffect(()=>{
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                                <span className="place__rating-number">4,8</span>
+                              
                             </span>
 
                             <div className="place__data">
                                 <h3 className="place__title">Bali</h3>
-                                <span className="place__subtitle">Indonesia</span>
-                                <span className="place__price">$2499</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
                         </button>
                     </div>
 
@@ -270,18 +312,15 @@ useEffect(()=>{
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                                <span className="place__rating-number">5,0</span>
                             </span>
 
                             <div className="place__data">
                                 <h3 className="place__title">Bora Bora</h3>
-                                <span className="place__subtitle">Polinesia</span>
-                                <span className="place__price">$1599</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
                         </button>
                     </div>
 
@@ -292,18 +331,15 @@ useEffect(()=>{
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                                <span className="place__rating-number">4,9</span>
                             </span>
 
                             <div className="place__data">
                                 <h3 className="place__title">Hawaii</h3>
-                                <span className="place__subtitle">EE.UU</span>
-                                <span className="place__price">$3499</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line">  <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line">  <FiPhoneCall size={15}/></i>
                         </button>
                     </div>
 
@@ -314,18 +350,15 @@ useEffect(()=>{
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                                <span className="place__rating-number">4,8</span>
                             </span>
 
                             <div className="place__data">
                                 <h3 className="place__title">Whitehaven</h3>
-                                <span className="place__subtitle">Australia</span>
-                                <span className="place__price">$2499</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
                         </button>
                     </div>
 
@@ -336,21 +369,36 @@ useEffect(()=>{
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                                <span className="place__rating-number">4,8</span>
                             </span>
 
                             <div className="place__data">
                                 <h3 className="place__title">Hvar</h3>
-                                <span className="place__subtitle">Croacia</span>
-                                <span className="place__price">$1999</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
+                        </button>
+                    </div>
+                    <div className="place__card">
+                        <img src={place5} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Hvar</h3>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
                         </button>
                     </div>
                 </div>
+                
             </section>
 
            
@@ -358,8 +406,8 @@ useEffect(()=>{
                 <div className="subscribe__bg">
                     <div className="subscribe__container container">
                         <h2 className="section__title subscribe__title">Subscribe Our <br/> Newsletter</h2>
-                        <p className="subscribe__description">Subscribe to our newsletter and get a 
-                            special 30% discount.
+                        <p className="subscribe__description">Subscribe to our newsletter and get latest
+                        information about nearest places.
                         </p>
     
                         <form action="" className="subscribe__form">
@@ -374,25 +422,7 @@ useEffect(()=>{
             </section>
             
            
-            <section className="sponsor section">
-                <div className="sponsor__container container grid">
-                    <div className="sponsor__content">
-                        <img src={sponsors1} alt="" className="sponsor__img"/>
-                    </div>
-                    <div className="sponsor__content">
-                        <img src={sponsors2} alt="" className="sponsor__img"/>
-                    </div>
-                    <div className="sponsor__content">
-                        <img src={sponsors3} alt="" className="sponsor__img"/>
-                    </div>
-                    <div className="sponsor__content">
-                        <img src={sponsors4} alt="" className="sponsor__img"/>
-                    </div>
-                    <div className="sponsor__content">
-                        <img src={sponsors5} alt="" className="sponsor__img"/>
-                    </div>
-                </div>
-            </section>
+           
         </main>
 
         <footer className="footer section">
@@ -429,7 +459,7 @@ useEffect(()=>{
                                 <a href="#/" className="footer__link">Features</a>
                             </li>
                             <li className="footer__item">
-                                <a href="#/" className="footer__link">New & Blog</a>
+                                <a href="#/" className="footer__link">Log</a>
                             </li>
                         </ul>
                     </div>
@@ -443,9 +473,7 @@ useEffect(()=>{
                             <li className="footer__item">
                                 <a href="#/" className="footer__link">Plan y Pricing</a>
                             </li>
-                            <li className="footer__item">
-                                <a href="#/" className="footer__link">Become a member</a>
-                            </li>
+                           
                         </ul>
                     </div>
     
