@@ -59,19 +59,19 @@ export const TransportAll =[
 export const BookingAll =[
     {
         title: "Hotel",
-        url: "/",
+        url: "https://www.makemytrip.com/hotels/",
         cName: "nav-links",
         icon: <FiHome size={20}/>
     },
     {
         title: "Bus Ticket",
-        url: "/",
+        url: "https://www.redbus.in/?gclid=CjwKCAjw0N6hBhAUEiwAXab-TfNonIxidyc_dewTtCp_G-DEZhPCMKTxkLERwqcDF1d5h64-k4vmNhoCSqwQAvD_BwE",
         cName: "nav-links",
         icon: <FiEdit3 size={20}/>
     },
     {
         title: "Train Ticket",
-        url: "/",
+        url: "https://www.irctc.co.in/nget/train-search",
         cName: "nav-links",
         icon: <FiEdit3 size={20}/>
     }

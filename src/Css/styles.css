@@ -522,12 +522,16 @@ input {
 }
 
 .experience__img-one, 
-.experience__img-two {
+.experience__img-two, 
+.experience__img-three, 
+.experience__img-four {
   transition: var(--img-transition);
 }
 
 .experience__img-one:hover, 
-.experience__img-two:hover {
+.experience__img-two:hover,
+.experience__img-three:hover,
+.experience__img-four:hover {
   transform: var(--img-scale);
 }
 
@@ -535,13 +539,25 @@ input {
   overflow: var(--img-hidden);
 }
 
-.experience__overlay:nth-child(1) {
-  width: 263px;
+.experience__overlay:nth-child(1)
+{
+  width: 363px;
   margin-right: 2rem;
 }
 
+.experience__overlay:nth-child(3) {
+  width: 600px;
+  margin-right: 2rem;
+}
+
+.experience__overlay:nth-child(4){
+  width: 250px;
+  position:absolute;
+  top: 30rem;
+  right: 0;
+}
 .experience__overlay:nth-child(2) {
-  width: 120px;
+  width: 220px;
   position: absolute;
   top: 2rem;
   right: 0;
@@ -560,12 +576,15 @@ input {
 
 .video__content {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .video__button {
   position: absolute;
-  right: 1rem;
-  bottom: -1rem;
+  right: 8rem;
+  bottom: 1rem;
   padding: 1rem 1.5rem;
 }
 
@@ -1046,7 +1065,11 @@ input {
 }
 
 
-/* Drop Down */
+/* manual*/
+
+a{
+  color: #FFF;
+}
 
 
 

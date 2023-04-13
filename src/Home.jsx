@@ -2,17 +2,25 @@ import react, { useEffect, useState } from 'react'
 import { FiSun, FiMoon, FiFacebook, FiInstagram, FiYoutube, FiTwitter, FiArrowRightCircle, FiPlay, FiPhoneCall } from "react-icons/fi"
 import "./Css/styles.css"
 import video from "./assets/video/video.mp4"
-import imgp from "./assets/img/home1.jpg"
+import imgp from "./assets/img/imgp.jpg"
 import home1 from "./assets/img/home1.jpg"
-import about1 from "./assets/img/about1.jpg"
-import about2 from "./assets/img/about2.jpg"
-import experience1 from "./assets/img/experience1.jpg"
-import experience2 from "./assets/img/experience2.jpg"
-import place1 from "./assets/img/place1.jpg"
-import place2 from "./assets/img/place2.jpg"
-import place3 from "./assets/img/place3.jpg"
-import place4 from "./assets/img/place4.jpg"
-import place5 from "./assets/img/place5.jpg"
+import hotel1 from "./assets/img/hotels/hotel1.jpg"
+import hotel2 from "./assets/img/hotels/hotel2.jpg"
+import al from "./assets/img/adventure/al.jpg"
+import dl from "./assets/img/adventure/dl.jpg"
+import eod from "./assets/img/adventure/eod.jpg"
+import wow from "./assets/img/adventure/wow.jpg"
+import red_fort from "./assets/img/monuments/red_fort.jpg"
+import qutub_minar from "./assets/img/monuments/qutub_minar.jpg"
+import india_gate from "./assets/img/monuments/india_gate.jpg"
+import lotus_temple from "./assets/img/monuments/lotus_temple.jpg"
+import akshar from "./assets/img/monuments/akshar.jpg"
+import police from "./assets/img/emergency/police.jpg"
+import cyber from "./assets/img/emergency/cyber.jpg"
+import fire from "./assets/img/emergency/fire.jpg"
+import ambulance from "./assets/img/emergency/ambulance.jpg"
+import women from "./assets/img/emergency/women.jpg"
+import child from "./assets/img/emergency/child.jpg"
 import "./Css/swiper.css"
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -71,7 +79,7 @@ useEffect(()=>{
                     <div className="home__info">
                         <div>
                             <span className="home__info-title">5 best places to visit</span>
-                            <a href="#/" className="button button--flex button--link home__info-button">
+                            <a href="https://www.herzindagi.com/destination/top-5-tourist-places-to-visit-in-delhi-article-210447" target='_blank' className="button button--flex button--link home__info-button">
                                 More <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
                             </a>
                         </div>
@@ -92,16 +100,16 @@ useEffect(()=>{
                             prices with special discounts, you choose the place we will guide you all the way to wait, get your 
                             place now.
                         </p>
-                        <a href="#/" className="button">Reserve a place</a>
+                        <a href="https://www.makemytrip.com/hotels/" target='_blank' className="button">Reserve a place</a>
                     </div>
 
                     <div className="about__img">
                         <div className="about__img-overlay">
-                            <img src={about1} alt="" className="about__img-one"/>
+                            <img src={hotel1} alt="" className="about__img-one"/>
                         </div>
 
                         <div className="about__img-overlay">
-                            <img src={about2} alt="" className="about__img-two"/>
+                            <img src={hotel2} alt="" className="about__img-two"/>
                         </div>
                     </div>
                 </div>
@@ -113,7 +121,7 @@ useEffect(()=>{
                 <div className="place__container container grid">
                    
                     <div className="place__card">
-                        <img src={place1} alt="" className="place__img"/>
+                        <img src={red_fort} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -122,19 +130,19 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Bali</h3>
-                                <span className="place__subtitle">Indonesia</span>
+                                <h3 className="place__title">Red Fort</h3>
+                                <span className="place__subtitle">New Delhi</span>
                             </div>
                         </div>
 
-                        <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                        <button className="button button--flex place__button" >
+                        <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Red_Fort' target='_blank'> <FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place2} alt="" className="place__img"/>
+                        <img src={india_gate} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -143,19 +151,19 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Bora Bora</h3>
-                                <span className="place__subtitle">Polinesia</span>
+                                <h3 className="place__title">India Gate</h3>
+                                <span className="place__subtitle">Delhi</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/India_Gate' target='_blank'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place3} alt="" className="place__img"/>
+                        <img src={qutub_minar} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -164,19 +172,19 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Hawaii</h3>
-                                <span className="place__subtitle">EE.UU</span>
+                                <h3 className="place__title">Qutub Minar</h3>
+                                <span className="place__subtitle">New Delhi</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line">  <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Qutb_Minar' target='_blank'> <FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place4} alt="" className="place__img"/>
+                        <img src={akshar} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -185,19 +193,19 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Whitehaven</h3>
-                                <span className="place__subtitle">Australia</span>
+                                <h3 className="place__title">Akshardham</h3>
+                                <span className="place__subtitle">Delhi</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)' target=''><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place5} alt="" className="place__img"/>
+                        <img src={lotus_temple} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -206,13 +214,13 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Hvar</h3>
-                                <span className="place__subtitle">Croacia</span>
+                                <h3 className="place__title">Lotus Temple</h3>
+                                <span className="place__subtitle">Delhi</span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Lotus_Temple' target='_blank'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
                 </div>
@@ -250,11 +258,22 @@ useEffect(()=>{
 
                     <div className="experience__img grid">
                         <div className="experience__overlay">
-                            <img src={experience1} alt="" className="experience__img-one"/>
+                            <a href='https://adventureisland.in/travel/' target='_blank'>
+                            <img src={al} alt="" className="experience__img-one"/></a>
                         </div>
                         
                         <div className="experience__overlay">
-                            <img src={experience2} alt="" className="experience__img-two"/>
+                        <a href='http://www.drizzlingland.com/' target='_blank'>
+                            <img src={dl} alt="" className="experience__img-two"/></a>
+                        </div>
+                        
+                        <div className="experience__overlay">
+                        <a href='https://www.eodindia.com/' target='_blank'>
+                            <img src={wow} alt="" className="experience__img-three"/></a>
+                        </div>
+                        <div className="experience__overlay">
+                        <a href='https://www.wastetowonderpark.com/' target='_blank'>
+                            <img src={eod} alt="" className="experience__img-four"/></a>
                         </div>
                     </div>
                 </div>
@@ -270,12 +289,8 @@ useEffect(()=>{
                     </p>
 
                     <div className="video__content">
-                        <video src={video} type="video/mp4" id="video-file">
+                        <video src={video} type="video/mp4" id="video-file" controls loop>
                         </video>
-
-                        <button className="button button--flex video__button" id="video-button">
-                            <i className="ri-play-line video__button-icon" id="video-icon"><FiPlay size={15}/></i>
-                        </button>
                     </div>
                 </div>
             </section>
@@ -287,7 +302,7 @@ useEffect(()=>{
                 <div className="place__container container grid">
                    
                     <div className="place__card">
-                        <img src={place1} alt="" className="place__img"/>
+                        <img src={police} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -296,18 +311,18 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Bali</h3>
+                                <h3 className="place__title">Police</h3>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href="tel:100"><FiPhoneCall size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place2} alt="" className="place__img"/>
+                        <img src={cyber} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -315,18 +330,18 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Bora Bora</h3>
+                                <h3 className="place__title">Cyber Crime</h3>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href="tel:1930"><FiPhoneCall size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place3} alt="" className="place__img"/>
+                        <img src={fire} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -334,18 +349,18 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Hawaii</h3>
+                                <h3 className="place__title">Firebrigade</h3>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line">  <FiPhoneCall size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href="tel:101"> <FiPhoneCall size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place4} alt="" className="place__img"/>
+                        <img src={ambulance} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -353,18 +368,18 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Whitehaven</h3>
+                                <h3 className="place__title">Ambulance</h3>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href="tel:102"> <FiPhoneCall size={15}/></a></i>
                         </button>
                     </div>
 
                    
                     <div className="place__card">
-                        <img src={place5} alt="" className="place__img"/>
+                        <img src={women} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -372,16 +387,16 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Hvar</h3>
+                                <h3 className="place__title">Women Helpline</h3>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href="tel:1090"> <FiPhoneCall size={15}/></a></i>
                         </button>
                     </div>
                     <div className="place__card">
-                        <img src={place5} alt="" className="place__img"/>
+                        <img src={child} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
@@ -389,12 +404,12 @@ useEffect(()=>{
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Hvar</h3>
+                                <h3 className="place__title">Child Helpline</h3>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <FiPhoneCall size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href="tel:1098"> </a><FiPhoneCall size={15}/></i>
                         </button>
                     </div>
                 </div>
