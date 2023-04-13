@@ -156,6 +156,7 @@ const Navbar =()=>{
             </Link>
                 </li>
                 
+                
             </ul>
             <div style={{ cursor: "pointer" }} onClick={() => toggledark()}>{name}</div>
             {/* <ul className={Show ? "navmenu active":"navmenu"}>

@@ -282,7 +282,7 @@ useEffect(()=>{
 
            
             <section className="place section" id="place">
-                <h2 className="section__title">Choose Your Place</h2>
+                <h2 className="section__title">Emergency Contact</h2>
 
                 <div className="place__container container grid">
                    
