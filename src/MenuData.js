@@ -3,6 +3,12 @@ import { FiHome, FiMap, FiEdit3, FiBriefcase, FiBook, FiMail } from "react-icons
 
 export const MenuData =[
     {
+        title: "Monuments",
+        url: "/",
+        cName: "nav-links",
+        icon: <FiMap size={20}/>
+    },
+    {
         title: "Hotel",
         url: "/",
         cName: "nav-links",
@@ -43,7 +49,7 @@ export const MenuData =[
 export const TransportAll =[
     {
         title: "Bus",
-        url: "/",
+        url: "https://www.google.com/maps/dir/28.5987878,77.320955//@28.5987816,77.2797553,13z/data=!3m1!4b1!4m5!4m4!1m1!4e1!1m0!3e3",
         cName: "nav-links",
         icon: <FiHome size={20}/>
     },

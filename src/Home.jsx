@@ -57,13 +57,14 @@ const Home = () =>{
                    
                 </div>
                 <div>
-                    <img src={Images.akshar} alt='' />
+                    <img src={Images.akshar}  alt='' />
                    
                 </div>
                 
             </Carousel>
             </div>
                 {/* <img src={home1} alt="" className="home__img"/> */}
+                
 
                 <div className="home__container container grid">
                     <div className="home__data">
