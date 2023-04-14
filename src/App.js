@@ -1,11 +1,11 @@
 
-import './App.css';
-import Home from './Home';
-import { BrowserRouter } from 'react-router-dom'
+import './App.css'
+import { BrowserRouter, Router } from 'react-router-dom'
+import RouteNavs from './Routes';
 function App() {
   return (
     <BrowserRouter>
-     <Home/>
+     <RouteNavs/>
      </BrowserRouter>
   );
 }

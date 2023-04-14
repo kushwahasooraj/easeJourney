@@ -49,7 +49,7 @@ export const TransportAll =[
     },
     {
         title: "Train",
-        url: "/",
+        url: "/trainsearch",
         cName: "nav-links",
         icon: <FiEdit3 size={20}/>
     }
