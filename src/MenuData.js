@@ -10,7 +10,7 @@ export const MenuData =[
     },
     {
         title: "Hotel",
-        url: "/",
+        url: "/hotelsearch",
         cName: "nav-links",
         icon: <FiMap size={20}/>
     },

@@ -138,7 +138,7 @@ const Home = () =>{
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                                <span className="place__rating-number">4,8</span>
+                                <span className="place__rating-number">4.8</span>
                             </span>
 
                             <div className="place__data">
