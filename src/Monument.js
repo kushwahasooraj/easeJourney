@@ -11,7 +11,7 @@ import "./Css/swiper.css"
 // Import Swiper styles
 import 'swiper/css'
 import Navbar from './Navbar'
-const Home = () =>{
+const Monument = () =>{
 
     return(
         <>
@@ -28,9 +28,13 @@ const Home = () =>{
                 <div style={{position:'absolute'}}>
             <Carousel>
                 
-              
+               
                 <div>
-                    <img src={Images.slider2} alt='' />
+                    <img src={Images.red_fort} alt='' />
+                   
+                </div>
+                <div>
+                    <img src={Images.qutub_minar} alt='' />
                    
                 </div>
                 <div>
@@ -38,15 +42,11 @@ const Home = () =>{
                    
                 </div>
                 <div>
+                    <img src={Images.slider2} alt='' />
+                   
+                </div>
+                <div>
                     <img src={Images.slider10} alt='' />
-                   
-                </div>
-                <div>
-                    <img src={Images.red_fort} alt='' />
-                   
-                </div>
-                <div>
-                    <img src={Images.qutub_minar} alt='' />
                    
                 </div>
                 <div>
@@ -64,7 +64,7 @@ const Home = () =>{
                 
             </Carousel>
             </div>
-                {/* <img src={home1} alt="" className="home__img"/> */}
+                
                 
 
                 <div className="home__container container grid">
@@ -89,7 +89,7 @@ const Home = () =>{
 
                     <div className="home__info">
                         <div>
-                            <span className="home__info-title">5 best places to visit</span>
+                            <span className="home__info-title">Best places to visit</span>
                             <a href="#place" rel='noreferrer' className="button button--flex button--link home__info-button">
                                 More <i className="ri-arrow-right-line"> <FiArrowRightCircle size={15}/></i>
                             </a>
@@ -102,30 +102,8 @@ const Home = () =>{
                 </div>
             </section>
 
-           
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <section className="about section" id="about">
-                <div className="about__container container grid">
-                    <div className="about__data">
-                        <h2 className="section__title about__title">More Information <br/> About The Best Hotels</h2>
-                        <p className="about__description">You can find the most beautiful and pleasant places at the best 
-                            prices with special discounts, you choose the place we will guide you all the way to wait, get your 
-                            place now.
-                        </p>
-                        <a href="https://www.makemytrip.com/hotels/" target='_blank' rel='noreferrer' className="button">Reserve a place</a>
-                    </div>
-
-                    <div className="about__img">
-                        <div className="about__img-overlay">
-                            <img src={Images.hotel1} alt="" className="about__img-one"/>
-                        </div>
-
-                        <div className="about__img-overlay">
-                            <img src={Images.hotel2} alt="" className="about__img-two"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             
             <section className="place section" id="place">
             <h2 className="section__title">Discover the most <br/> attractive places</h2>
@@ -138,7 +116,7 @@ const Home = () =>{
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                                <span className="place__rating-number">4,8</span>
+                                <span className="place__rating-number">4.5</span>
                             </span>
 
                             <div className="place__data">
@@ -235,221 +213,198 @@ const Home = () =>{
                             <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Lotus_Temple' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
-                </div>
-            </section>
-            {/* <section className="discover section" id="discover">
-                <h2 className="section__title">Discover the most <br/> attractive places</h2>
-                
-                <div className="discover__container container swiper-container">
-                    <div className="swiper-wrapper">
-                       <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide><img src={discover1} alt="" className="discover__img"/></SwiperSlide>
-      <SwiperSlide>  <img src={discover2} alt="" className="discover__img"/></SwiperSlide>
-      <SwiperSlide>  <img src={discover3} alt="" className="discover__img"/></SwiperSlide>
-      <SwiperSlide>  <img src={discover4} alt="" className="discover__img"/></SwiperSlide>
-      
-    </Swiper>
-                       
-                    </div>
-                </div>
-            </section> */}
-
-           
-            <section className="experience section">
-                <h2 className="section__title">With Our Experience <br/> We Will Serve You</h2>
-
-                <div className="experience__container container grid">
-                    <div className="experience__content grid">
-                       
-                    </div>
-
-                    <div className="experience__img grid">
-                        <div className="experience__overlay">
-                            <a href='https://adventureisland.in/travel/' target='_blank' rel='noreferrer'>
-                            <img src={Images.al} alt="" className="experience__img-one"/></a>
-                        </div>
-                        
-                        <div className="experience__overlay">
-                        <a href='http://www.drizzlingland.com/' target='_blank' rel='noreferrer'>
-                            <img src={Images.dl} alt="" className="experience__img-two"/></a>
-                        </div>
-                        
-                        <div className="experience__overlay">
-                        <a href='https://www.eodindia.com/' target='_blank' rel='noreferrer'>
-                            <img src={Images.wow} alt="" className="experience__img-three"/></a>
-                        </div>
-                        <div className="experience__overlay">
-                        <a href='https://www.wastetowonderpark.com/' target='_blank' rel='noreferrer'>
-                            <img src={Images.eod} alt="" className="experience__img-four"/></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-           
-            <section className="video section">
-                <h2 className="section__title">Video Tour</h2>
-
-                <div className="video__container container">
-                    <p className="video__description">Find out more with our video of the most beautiful and 
-                        pleasant places for you and your family.
-                    </p>
-
-                    <div className="video__content">
-                        <video src={video} type="video/mp4" id="video-file" controls loop>
-                        </video>
-                    </div>
-                </div>
-            </section>
-
-           
-            <section className="place section" id="emergency">
-                <h2 className="section__title">Emergency Contact</h2>
-
-                <div className="place__container container grid">
-                   
                     <div className="place__card">
-                        <img src={Images.police} alt="" className="place__img"/>
+                        <img src={Images.slider1} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
-                              
+                                <span className="place__rating-number">4.2</span>
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Police</h3>
+                                <h3 className="place__title">Agrasen Ki Baoli</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Agrasen+ki+Baoli/@28.626062,77.222462,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfd3313d868d9:0x9084a965630af01b!8m2!3d28.626062!4d77.2250369!16s%2Fm%2F027z5xq' target='_blank'>J6GG+C2F, Hailey Road, KG Marg, near Diwanchand Imaging Centre, New Delhi, Delhi 110001</a></span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <a href="tel:100"><FiPhoneCall size={15}/></a></i>
+                            <i className="ri-arrow-right-line"> <a href='https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%87%E0%A4%A8_%E0%A4%95%E0%A5%80_%E0%A4%AC%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A5%80' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
-
-                   
                     <div className="place__card">
-                        <img src={Images.cyber} alt="" className="place__img"/>
+                        <img src={Images.slider2} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.7</span>
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Cyber Crime</h3>
+                                <h3 className="place__title">Chattarpur Temple</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Chattarpur+Mandir/@28.502323,77.1793751,17z/data=!3m1!4b1!4m6!3m5!1s0x390d1e3d1fc01263:0xc0b6b3968e9b385f!8m2!3d28.502323!4d77.18195!16s%2Fg%2F1hc2l424r' target='_blank'>Chhatarpur, South Delhi district, Delhi, India</a></span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <a href="tel:1930"><FiPhoneCall size={15}/></a></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Chhatarpur_Temple' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
-
-                   
                     <div className="place__card">
-                        <img src={Images.fire} alt="" className="place__img"/>
+                        <img src={Images.slider3} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.5</span>
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Firebrigade</h3>
+                                <h3 className="place__title">Hauz Khas</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Hauz+Khas+Village,+Deer+Park,+Hauz+Khas,+New+Delhi,+Delhi+110016/@28.553331,77.1916359,17z/data=!3m1!4b1!4m6!3m5!1s0x390d1d8aa6bccb0f:0x357d3d8396615cec!8m2!3d28.5533997!4d77.1941654!16s%2Fg%2F11bz0bdcbv' target='_blank'>X-31, Block X, Deer Park, Hauz Khas, New Delhi, Delhi 110016</a></span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <a href="tel:101"> <FiPhoneCall size={15}/></a></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Hauz_Khas' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
-
-                   
                     <div className="place__card">
-                        <img src={Images.ambulance} alt="" className="place__img"/>
+                        <img src={Images.slider4} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.1</span>
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Ambulance</h3>
+                                <h3 className="place__title">Jantar Mantar</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Jantar+Mantar/@28.6270547,77.2140518,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfd4a694fc49b:0xa24a6ec962781b0c!8m2!3d28.6270547!4d77.2166267!16zL20vMDdyNmQ3' target='_blank'>Connaught Place, Sansad Marg, New Delhi, Delhi 110001</a></span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <a href="tel:102"> <FiPhoneCall size={15}/></a></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Jantar_Mantar' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
-
-                   
                     <div className="place__card">
-                        <img src={Images.women} alt="" className="place__img"/>
+                        <img src={Images.slider5} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.2</span>
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Women Helpline</h3>
+                                <h3 className="place__title">Purana Qila</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Purana+Qila/@28.6095744,77.2411622,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce3214b3b6771:0x139279610ab2ccb3!8m2!3d28.6095744!4d77.2437371!16zL20vMDZuZzRw' target='_blank'>Mathura Rd, Near Delhi Zoo, New Delhi, Delhi 110003</a></span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <a href="tel:1090"> <FiPhoneCall size={15}/></a></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Purana_Qila' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
                     <div className="place__card">
-                        <img src={Images.child} alt="" className="place__img"/>
+                        <img src={Images.slider6} alt="" className="place__img"/>
                         
                         <div className="place__content">
                             <span className="place__rating">
                                 <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.5</span>
                             </span>
 
                             <div className="place__data">
-                                <h3 className="place__title">Child Helpline</h3>
+                                <h3 className="place__title">Amrit Udyan</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Amrit+Udyan/@28.6144404,77.1952861,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce3c6bdd55eb1:0x834571b6bf250fa6!8m2!3d28.6144404!4d77.197861!16s%2Fg%2F11pgjcbph0' target='_blank'>Rashtrapati Bhawan, President's Estate, New Delhi, Delhi 110004</a></span>
                             </div>
                         </div>
 
                         <button className="button button--flex place__button">
-                            <i className="ri-arrow-right-line"> <a href="tel:1098"> </a><FiPhoneCall size={15}/></i>
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Mughal_garden' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
+                        </button>
+                    </div>
+                    <div className="place__card">
+                        <img src={Images.slider7} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.8</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Gurudwara Bangla Sahib</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Gurudwara+Shri+Bangla+Sahib/@28.6263764,77.2064955,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfd9eccc07d2d:0x6db044e71b8e8e3b!8m2!3d28.6263764!4d77.2090704!16zL20vMDRfMWtz' target='_blank'>Hanuman Road Area, Connaught Place, New Delhi, Delhi 110001</a></span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Gurudwara_Bangla_Sahib' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
+                        </button>
+                    </div>
+                    <div className="place__card">
+                        <img src={Images.slider8} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.5</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Lodi Garden</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Lodhi+Garden/@28.5930959,77.2171045,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce2ececc92e35:0x86c0764b1c0d4bea!8m2!3d28.5930959!4d77.2196794!16zL20vMDRfOHF0' target='_blank'>Lodhi Rd, Lodhi Gardens, Lodhi Estate, New Delhi, Delhi 110003</a></span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Lodi_Gardens' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
+                        </button>
+                    </div>
+                    <div className="place__card">
+                        <img src={Images.slider9} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.5</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Jama Masjid</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Jama+Masjid/@28.6506792,77.2308672,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfd18df89b215:0xdd57369e29bf9d96!8m2!3d28.6506792!4d77.2334421!16zL20vMDR5emo1' target='_blank'>Jama Masjid Rd, Jama Masjid, Chandni Chowk, New Delhi, Delhi 110006</a></span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Jama_Masjid,_Delhi' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
+                        </button>
+                    </div>
+                    <div className="place__card">
+                        <img src={Images.slider10} alt="" className="place__img"/>
+                        
+                        <div className="place__content">
+                            <span className="place__rating">
+                                <i className="ri-star-line place__rating-icon"></i>
+                                <span className="place__rating-number">4.8</span>
+                            </span>
+
+                            <div className="place__data">
+                                <h3 className="place__title">Hanuman Temple</h3>
+                                <span className="place__subtitle"><a href='https://www.google.com/maps/place/Hanuman+Mandir+Karol+bagh/@28.6450368,77.1954869,17z/data=!3m1!4b1!4m6!3m5!1s0x390d029da94bf9d9:0xda267c5baef74594!8m2!3d28.6450368!4d77.1980618!16s%2Fg%2F11cn8pr65y' target='_blank'>Desh Bandhu Gupta Rd, Block E, Jhandewalan Extension, Paharganj, New Delhi, Delhi 110055</a></span>
+                            </div>
+                        </div>
+
+                        <button className="button button--flex place__button">
+                            <i className="ri-arrow-right-line"> <a href='https://en.wikipedia.org/wiki/Jhandewalan_Temple' target='_blank' rel='noreferrer'><FiArrowRightCircle size={15}/></a></i>
                         </button>
                     </div>
                 </div>
-                
-            </section>
-
-           
-            <section className="subscribe section">
-                <div className="subscribe__bg">
-                    <div className="subscribe__container container">
-                        <h2 className="section__title subscribe__title">Subscribe Our <br/> Newsletter</h2>
-                        <p className="subscribe__description">Subscribe to our newsletter and get latest
-                        information about nearest places.
-                        </p>
-    
-                        <form action="" className="subscribe__form">
-                            <input type="text" placeholder="Enter email" className="subscribe__input"/>
-    
-                            <button className="button">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            
-           
-           
+            </section>  
         </main>
 
         <footer className="footer section">
@@ -529,9 +484,6 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-            <div style={{position:"fixed",bottom:"15px",right:"60px",cursor:"pointer"}}>
-                <i ><a href='#emergency'> <FiPhoneCall size={50} color='red'/> </a></i>
-            </div>
         </footer>
 
         
@@ -541,4 +493,4 @@ const Home = () =>{
         </>
     )
 }
-export default Home
+export default Monument

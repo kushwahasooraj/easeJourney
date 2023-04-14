@@ -4,7 +4,7 @@ import { FiHome, FiMap, FiEdit3, FiBriefcase, FiBook, FiMail } from "react-icons
 export const MenuData =[
     {
         title: "Monuments",
-        url: "/",
+        url: "/monument",
         cName: "nav-links",
         icon: <FiMap size={20}/>
     },
