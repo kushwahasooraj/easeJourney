@@ -83,9 +83,9 @@ function Footer(){
                     </div>
                 </div>
             </div>
-            <div style={{position:"fixed",bottom:"15px",right:"60px",cursor:"pointer"}}>
+            {/* <div style={{position:"fixed",bottom:"15px",right:"60px",cursor:"pointer"}}>
                 <i ><a href='./#emergency'> <FiPhoneCall size={50} color='red'/> </a></i>
-            </div>
+            </div> */}
         </footer>
         </>
     )

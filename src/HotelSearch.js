@@ -3,11 +3,6 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Box from '@mui/material/Box'
 import { Stack, TextField } from '@mui/material'
-import dayjs from 'dayjs';
-import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo'
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker'
 import Paper from '@mui/material/Paper'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
@@ -102,11 +97,12 @@ const HotelSearch = () => {
             ))}
           </TableBody>
         </Table>
-      </TableContainer> : null}
-      <br/>
+        <br/><br/>
       <button className="button">
-        <a href='https://www.makemytrip.com/hotels/' target='_blank'> Book Now</a>
+        <a href='https://www.makemytrip.com/hotels/' target='_blank' rel='noreferrer'> Book Now</a>
       </button>
+      </TableContainer> : null}
+      
       <Footer />
     </>
   )

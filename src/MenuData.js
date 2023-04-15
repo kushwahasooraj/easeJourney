@@ -16,25 +16,25 @@ export const MenuData =[
     },
     {
         title: "Police Station",
-        url: "/",
+        url: "http://localhost:8000/info/POLICE%20STATION/",
         cName: "nav-links",
         icon: <FiEdit3 size={20}/>
     },
     {
         title: "School",
-        url: "/",
+        url: "http://localhost:8000/info/Schools/",
         cName: "nav-links",
         icon: <FiBriefcase size={20}/>
     },
     {
         title: "Old Age Home",
-        url: "/",
+        url: "http://localhost:8000/info/Old%20Age%20Home/",
         cName: "nav-links",
         icon: <FiBook size={20}/>
     },
     {
         title: "Hospital",
-        url: "/",
+        url: "http://localhost:8000/info/Hospitals/",
         cName: "nav-links",
         icon: <FiMail size={20}/>
     }

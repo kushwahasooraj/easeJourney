@@ -144,15 +144,15 @@ const Navbar =()=>{
             {booking && <Booking />}
           </li>
           <li>
-                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='http://localhost:8000/info/' target='blank' rel="noreferrer" className='nav-links' onClick={closeMobileMenu}>
                     <i className='fas fa-caret-down' ><FiUsers size={20}/></i>
               Govt. Official
             </Link>
                 </li>
                 <li>
-                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='http://localhost:8000/' target='blank' rel="noreferrer" className='nav-links' onClick={closeMobileMenu}>
                     <i className='fas fa-caret-down' ><FiUsers size={20}/></i>
-              Sign In
+              Logs
             </Link>
                 </li>
                 
