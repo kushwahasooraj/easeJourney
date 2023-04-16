@@ -16,6 +16,7 @@ import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import Button from '@mui/material/Button'
 import TableRow from '@mui/material/TableRow'
+import Swal from "sweetalert2"
 
 const Trainsearch =()=>{
   const[dataa,setdata]=useState([])
@@ -42,13 +43,15 @@ const getData = async()=>{
     headers:{
         Accept: 'application/json',
         "Content-Type": "application/json",
-        "X-RapidAPI-Key":"1955fe4befmsh5d44c71ba99a536p14c51fjsnc4cedb8ce5a7"
+        "X-RapidAPI-Key":"cb699ae246msh7f7e3c0e1bd58fdp10186djsncd748a6b39e0"
     }
 }).then((res) => res.json())
     .then((response)=>{
         console.log(response)
+        
         setdata(response)
         setshow(true)
+        
     })
 }
 // const object={
